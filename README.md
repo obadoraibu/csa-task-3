@@ -15,14 +15,14 @@
 ## Компиляция кода на Си:
 ```
 gcc main.c -c -o main.o
-gcc logic.c -c -o logic.o
-gcc main.o logic.o -o out
+gcc logic.c -c -o logic.o -lm
+gcc main.o logic.o -o out -lm
 ```
 ## Компиляция кода на Ассемблере:
 ```
 gcc main.s -c -o main.o
-gcc logic.s -c -o logic.o
-gcc main.o logic.o -o out
+gcc logic.s -c -o logic.o -lm
+gcc main.o logic.o -o out -lm
 ```
 ## Запуск:
 ```
