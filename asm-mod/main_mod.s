@@ -36,8 +36,8 @@ main:
 	mov	rsi, rdx					# rsi := rdx("r")
 	mov	rdi, rax					# rdi := argv[1]
 	call	fopen@PLT				# fopen(rdi(argv[1]), rsi("r"))		
-	mov	r12, rax		# returns input* in rax and saves in QWORD PTR -8[rbp]
-	cmp	r12, 0		# / if (input != NULL) {go to L3} 
+	mov	r12, rax					# returns input* in rax and saves in QWORD PTR -8[rbp]
+	cmp	r12, 0						# / if (input != NULL) {go to L3} 
 	jne	.L3							# \
 	lea	rax, .LC1[rip]				# 
 	mov	rdi, rax					# rdi := "Error"
