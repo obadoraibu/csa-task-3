@@ -1,4 +1,4 @@
-# Архитектура вычислительных систем - ИДЗ 2
+# Архитектура вычислительных систем - ИДЗ 3
 # Завьялов Егор БПИ-217 Вариант 20
 
 ## Структура:
@@ -52,22 +52,31 @@ gcc -masm=intel \
     -S -o ./logic.s
 ```
 Код на ассемблере отдельно скомпилирован и проходит тесты:
->![asm1](img/asm1.png)
->![res1](img/res1.png)
->![asm2](img/asm2.png)
->![res2](img/res2.png)
-* Ввод через аргументы командной строки реализован
+>![asm1](img_asm/input1.png)
+>![res2](img_asm/cmd1.png)
+>![asm2](img/out1.png)
+>![res1](img_asm/input2.png)
+>![asm1](img_asm/cmd2.png)
+>![res2](img/out2.png)
+>![asm2](img_asm/input3.png)
+>![res1](img_asm/cmd3.png)
+>![res2](img/out3.png)
+* Ввод через аргументы командной строки реализован(пути к файлам)
 * Локальные переменные использованы
 * Комментарии в [ассемблерный код](asm) добавлены 
 * Возможность ввода данных через текстовые файлы добавлена
 
 ## Рефакторинг
-*     Удален endbr64
-*     Удален код сгенерированный gcc после ret
+*     Удалены endbr64
 *     Оптимизировано использование регистров процессора (r12 := input*, r13 := output*)
 
 Тесты модифицированного кода:
->![asm_mod1](img/asm_mod1.png)
->![res1](img/res1.png)
->![asm_mod2](img/asm_mod2.png)
->![res2](img/res2.png)
+>![asm1](img_asm_mod/input1.png)
+>![res2](img_asm_mod/cmd1.png)
+>![asm2](img_asm_mod/out1.png)
+>![res1](img_asm_mod/input2.png)
+>![asm1](img_asm_mod/cmd2.png)
+>![res2](img_asm_mod/out2.png)
+>![asm2](img_asm_mod/input3.png)
+>![res1](img_asm_mod/cmd3.png)
+>![res2](img_asm_mod/out3.png)
