@@ -54,13 +54,13 @@ gcc -masm=intel \
 Код на ассемблере отдельно скомпилирован и проходит тесты:
 >![asm1](img_asm/input1.png)
 >![res2](img_asm/cmd1.png)
->![asm2](img/out1.png)
+>![asm2](img_asm/out1.png)
 >![res1](img_asm/input2.png)
 >![asm1](img_asm/cmd2.png)
->![res2](img/out2.png)
+>![res2](img_asm/out2.png)
 >![asm2](img_asm/input3.png)
 >![res1](img_asm/cmd3.png)
->![res2](img/out3.png)
+>![res2](img_asm/out3.png)
 * Ввод через аргументы командной строки реализован(пути к файлам)
 * Локальные переменные использованы
 * Комментарии в [ассемблерный код](asm) добавлены 
